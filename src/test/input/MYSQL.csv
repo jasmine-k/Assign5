@@ -1,0 +1,4 @@
+1,Creating table employee,"DROP TABLE EMPLOYEE IF EXISTS"," CREATE TABLE employee (id INTEGER , name VARCHAR(20) , address: VARCHAR(50), phone: BIGINT", "DROP TABLE EMPLOYEE"
+1,"Creating table employee","DROP TABLE EMPLOYEE IF EXISTS"," CREATE TABLE employee (id INTEGER , name VARCHAR(20) , address: VARCHAR(50), phone: BIGINT", "DROP TABLE EMPLOYEE"
+1,"Creating table employee","DROP TABLE EMPLOYEE IF EXISTS"," CREATE TABLE employee (id INTEGER , name VARCHAR(20) , address: VARCHAR(50), phone: BIGINT", "DROP TABLE EMPLOYEE"
+1,"Creating table employee","DROP TABLE EMPLOYEE IF EXISTS"," CREATE TABLE employee (id INTEGER , name VARCHAR(20) , address: VARCHAR(50), phone: BIGINT", "DROP TABLE EMPLOYEE"
