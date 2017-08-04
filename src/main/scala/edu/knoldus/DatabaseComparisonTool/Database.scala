@@ -21,7 +21,7 @@ trait Database {
       DriverManager.getConnection(url, username, password)
     }
     catch {
-      case error: Exception => throw new Exception("Connection was not successful!!")
+      case error: Exception => throw error
     }
     connection
   }
@@ -35,8 +35,6 @@ trait Database {
     val mysqlStatement = connection.createStatement()
     mysqlStatement.execute(testCase.preCondition)
     val start = System.nanoTime()
-    val logger = Logger.getLogger(this.getClass)
-    logger.info(s"${testCase.testCaseId} ${testCase.query}")
     mysqlStatement.execute(testCase.query)
     val end = System.nanoTime()
     mysqlStatement.execute(testCase.postCondition)

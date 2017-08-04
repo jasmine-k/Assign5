@@ -3,14 +3,13 @@ package edu.knoldus.Models
 import java.io.FileReader
 
 import com.opencsv.CSVReader
-=import scala.collection.JavaConversions._
+import scala.collection.JavaConversions._
 
-class ParseCSV {
+object ParseCSV {
 
-  val OUTPUT_DIR = "src/test/input/MYSQL.csv"
-  def parseCSV(): Unit ={
+  def parseCSV(filePath: String): List[TestCase] ={
 
-    val fileReader = new FileReader(OUTPUT_DIR)
+    val fileReader = new FileReader(filePath)
     try{
       val reader: CSVReader = new CSVReader(fileReader, ',', '\"')
       val queryList = for (
@@ -25,7 +24,7 @@ class ParseCSV {
 
     }
     catch{
-        case error => throw new Exception
+        case error => throw error
     }
     finally {
       fileReader.close()

@@ -7,3 +7,5 @@ scalaVersion := "2.12.3"
 libraryDependencies += "mysql" % "mysql-connector-java" % "6.0.6"
 libraryDependencies += "com.opencsv" % "opencsv" % "3.7"
 
+libraryDependencies +=   "org.scalatest" %% "scalatest" % "3.0.0" % "test"
+
